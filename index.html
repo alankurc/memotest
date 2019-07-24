@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Sirin+Stencil" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./Assets/css/bootstrap.css">
+    
+    <link rel="stylesheet" href="./Assets/css/estilo.css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="./Assets/img/favicon.png">
+    
+    <title>Memo-Test</title>
+    
+</head>
+<body id="gradient">
+    
+    <div class="d-flex justify-content-center" id="carrera">
+    
+    <span>MEMO-TEST</span>
+    
+    </div>
+    
+    <div class="modal fade" id="inicio" tabindex="-1" role="dialog" aria-labelledby="Title" aria-hidden="true">
+      
+       <div class="modal-dialog modal-dialog-centered" role="document">
+        
+         <div class="modal-content">
+          
+            <div class="modal-header d-flex justify-content-center">
+            
+            <h5 class="modal-title">MEMO TEST (solo 30seg)</h5>
+          
+            </div>
+          
+           <div class="modal-body text-center">Elegí el nivel</div>
+           
+           <div class="d-flex justify-content-around">
+                <span><b>90seg</b></span>
+                <span><b>60seg</b></span>
+                <span><b>30seg</b></span>
+           </div>
+          
+           <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" id="lvl1" value="90">LVL 1</button>
+                <button type="button" class="btn btn-outline-dark" id="lvl2" value="60">LVL 2</button>
+                <button type="button" class="btn btn-outline-dark" id="lvl3" value="30">LVL 3</button>
+           </div>
+           
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    <div class="row" id="juego">
+ 
+   <div id="clock_container" class="col-lg-6">
+
+		<div class="time" id="sec">
+			<div class="block b1 tens" id="sec11"></div>
+			<div class="block b2 tens" id="sec12"></div>
+			<div class="block b3 tens" id="sec13"></div>
+			<div class="block b4 tens" id="sec14"></div>
+			<div class="block b5 tens" id="sec15"></div>
+			<div class="block b6 tens" id="sec16"></div>
+			<div class="block b7 tens" id="sec17"></div>
+			<div class="block b1 ones" id="sec1"></div>
+			<div class="block b2 ones" id="sec2"></div>
+			<div class="block b3 ones" id="sec3"></div>
+			<div class="block b4 ones" id="sec4"></div>
+			<div class="block b5 ones" id="sec5"></div>
+			<div class="block b6 ones" id="sec6"></div>
+			<div class="block b7 ones" id="sec7"></div>
+		</div>
+
+    </div>
+   
+   <div class="container col-lg-6" id="container-cartas">
+
+        <div class="cardWrapper">
+
+            <div class="row">
+               
+                <div class="col-lg-3 cardContainer">
+                 
+                  <div class="card azul" data-par="azul" >
+                   
+                    <div class="front"><h3 class="cardTitle sr-only">1</h3></div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                 <div class="col-lg-3 cardContainer">
+                 
+                  <div class="card naranja" data-par="naranja">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">2</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="col-lg-3 cardContainer">
+                 
+                  <div class="card verde" data-par="verde">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">3</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="col-lg-3 cardContainer">
+                 
+                  <div class="card rojo" data-par="rojo">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">4</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                
+            </div>
+           
+        </div>
+
+        <div class="cardWrapper02">
+
+            <div class="row">
+               
+                <div class="col-lg-3 cardContainer02">
+                 
+                  <div class="card rojo" data-par="rojo">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">5</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                 <div class="col-lg-3 cardContainer02">
+                 
+                  <div class="card verde" data-par="verde">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">6</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="col-lg-3 cardContainer02">
+                 
+                  <div class="card naranja" data-par="naranja">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">7</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="col-lg-3 cardContainer02">
+                 
+                  <div class="card azul" data-par="azul">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">8</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                     
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                
+            </div>
+           
+        </div>
+        
+        <div class="cardWrapper03">
+
+            <div class="row">
+               
+                <div class="col-lg-3 cardContainer03">
+                 
+                  <div class="card azul" data-par="chocolate" >
+                   
+                    <div class="front"><h3 class="cardTitle sr-only">9</h3></div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                 <div class="col-lg-3 cardContainer03">
+                 
+                  <div class="card naranja" data-par="magenta">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">10</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="col-lg-3 cardContainer03">
+                 
+                  <div class="card verde" data-par="rosa">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">11</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="col-lg-3 cardContainer03">
+                 
+                  <div class="card rojo" data-par="cyan">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">12</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                
+            </div>
+           
+        </div>
+
+        <div class="cardWrapper04">
+
+            <div class="row">
+               
+                <div class="col-lg-3 cardContainer04">
+                 
+                  <div class="card rojo" data-par="cyan">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">13</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                 <div class="col-lg-3 cardContainer04">
+                 
+                  <div class="card verde" data-par="rosa">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">14</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="col-lg-3 cardContainer04">
+                 
+                  <div class="card naranja" data-par="magenta">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">15</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+                <div class="col-lg-3 cardContainer04">
+                 
+                  <div class="card azul" data-par="chocolate">
+                   
+                    <div class="front">
+                    
+                    <h3 class="cardTitle sr-only">16</h3>
+                    
+                    </div>
+                    
+                    <div class="back">
+                     
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                
+            </div>
+           
+        </div>
+         
+      </div>
+      
+    </div>
+      
+    <div class="modal fade" id="ganaste" tabindex="-1" role="dialog" aria-labelledby="Title" aria-hidden="true">
+      
+       <div class="modal-dialog modal-dialog-centered" role="document">
+        
+         <div class="modal-content">
+          
+            <div class="modal-header d-flex justify-content-center">
+            
+            <h5 class="modal-title">Ganaste</h5>
+          
+            </div>
+          
+           <div class="modal-body text-center" id="ganaste-txt">FELICITACIONES!!</div>
+          
+           <div class="modal-footer">
+
+            <button type="button" class="volver-jugar btn btn-outline-dark">Volver a Jugar</button>
+           </div>
+           
+        </div>
+        
+      </div>
+      
+    </div>
+     
+    <div class="modal fade" id="perdiste" tabindex="-1" role="dialog" aria-labelledby="Title" aria-hidden="true">
+      
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        
+            <div class="modal-content">
+          
+                <div class="modal-header d-flex justify-content-center">
+            
+                    <h5 class="modal-title">Perdiste</h5>
+          
+                </div>
+          
+               <div class="modal-body text-center">Volvé a jugar a ver si podes ganar</div>
+          
+               <div class="modal-footer">
+
+                    <button type="button" class="volver-jugar btn btn-outline-dark">Volver a Jugar</button>
+                    
+               </div>
+           
+            </div>
+        
+        </div>
+      
+    </div>
+      
+   <footer class="mt-4 d-flex justify-content-center">
+         
+     <span>Alan Kurc</span>
+          
+   </footer>
+   
+   <script src="./Assets/js/jquery-3.3.1.min.js"></script>
+   
+   <script src="./Assets/js/bootstrap.js"></script>
+   
+   <script src="./Assets/js/js.js"></script>
+    
+</body>
+</html>
